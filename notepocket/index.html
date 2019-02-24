@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NotePocket</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+            crossorigin="anonymous"
+        />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+</head>
+<body>
+<header>
+    <input id="search" type="text" value="" placeholder="Search note..."/>
+    <button id="clearNotes">CLEAR ALL NOTES</button>
+</header>
+<main>
+    <div id="addNote" class="shadowbox">
+        <form>
+            <input class="noteTitle" type="text" name="title" id="" placeholder="Title" required/>
+            <textarea class="noteBody" type="login" name="content" placeholder="Take a note" required></textarea>
+            <div class="placeholder1">
+                <div>
+                    <select name="color" id="">
+                    <option value="white">Choose a color</option>
+                    <option value="rgb(214, 69, 65)">Red</option>
+                    <option value="rgb(107, 185, 240)">Blue</option>
+                    <option value="rgb(63, 195, 128)">Green</option>
+                    <option value="rgb(252, 185, 65)">Orange</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <button type="submit">ADD</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="notes-grid"></div>
+</main>
+    <script src="functionality.js"></script>
+</body>
+</html>
